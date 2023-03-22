@@ -1,5 +1,5 @@
-# pure-admin-utils-docs
+# vue3-amap-docs
 
-[pure-admin-utils](https://www.npmjs.com/package/@pureadmin/utils) 文档，使用 `vitepress` 搭建
+vue3-amap-docs 文档，使用 `vitepress` 搭建
 
-[文档地址](https://pure-admin-utils.netlify.app)
+<!-- [文档地址](https://pure-admin-utils.netlify.app) -->

@@ -1,11 +1,17 @@
 <script setup>
-import amap from './amap.vue'
+import { onMounted, shallowRef } from "vue"
+const dynamicComponent = shallowRef()
+onMounted(() => {
+  import('./amap.vue').then(module => {
+    dynamicComponent.value = module.default
+  })
+})
 </script>
 
 # ElAmap(示例)
 
 <ClientOnly>
-  <amap />
+  <component :is="dynamicComponent" />
 </ClientOnly>
 
 <details>
@@ -15,7 +21,6 @@ import amap from './amap.vue'
 <<< @/examples/amap/amap.vue
 
 </details>
-
 
 ### 参数
 
