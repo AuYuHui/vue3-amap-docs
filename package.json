@@ -10,7 +10,10 @@
   "license": "MIT",
   "author": "AuYuHui",
   "devDependencies": {
+    "@amap/amap-jsapi-types": "^0.0.13",
+    "@dabu/vue3-amap": "^0.0.12",
     "@pureadmin/utils": "^1.8.5",
+    "@types/amap-js-api-place-search": "^1.4.1",
     "@types/workbox-build": "^5.0.1",
     "@vicons/ionicons5": "^0.12.0",
     "@vite-pwa/vitepress": "^0.0.5",
@@ -36,8 +39,5 @@
         "@algolia/client-search"
       ]
     }
-  },
-  "dependencies": {
-    "@dabu/vue3-amap": "^0.0.11"
   }
 }

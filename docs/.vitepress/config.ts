@@ -124,10 +124,19 @@ export default withPwa(
             },
           ],
         },
+        {
+          text: "自定义",
+          items: [
+            {
+              text: "自定义组件",
+              link: "/examples/custom-map/custom-map",
+            },
+          ],
+        },
       ],
       footer: {
         message: "Released under the MIT License.",
-        copyright: "Copyright © 2023-present RealityBoy",
+        copyright: "Copyright © 2023-present AuYuHui",
       },
       lastUpdatedText: "最近更新时间",
     },
@@ -149,17 +158,3 @@ export default withPwa(
     },
   })
 );
-
-function getItems(path: string) {
-  const links: DefaultTheme.SidebarItem[] = [];
-  sync(`docs/${path}/*`, {
-    onlyDirectories: true,
-    objectMode: true,
-  }).forEach(({ name }) => {
-    links.push({
-      text: name,
-      link: `/${path}/${name}/${name}`,
-    });
-  });
-  return links;
-}
