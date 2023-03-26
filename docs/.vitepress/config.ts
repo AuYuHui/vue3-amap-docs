@@ -156,6 +156,19 @@ export default withPwa(
             },
           ],
         },
+        {
+          text: "点标记",
+          items: [
+            {
+              text: "Marker",
+              link: "/examples/overlay/marker/marker",
+            },
+            {
+              text: "Text",
+              link: "/examples/overlay/text/text",
+            },
+          ],
+        },
       ],
       footer: {
         message: "Released under the MIT License.",
@@ -174,6 +187,7 @@ export default withPwa(
       build: {
         chunkSizeWarningLimit: 10000,
       },
+      // @ts-ignore
       plugins: [Unocss()],
     },
     vue: {
