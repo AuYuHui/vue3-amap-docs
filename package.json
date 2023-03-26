@@ -11,8 +11,9 @@
   "author": "AuYuHui",
   "devDependencies": {
     "@amap/amap-jsapi-types": "^0.0.13",
-    "@dabu/vue3-amap": "^0.0.12",
+    "@dabu/vue3-amap": "^0.0.13",
     "@pureadmin/utils": "^1.8.5",
+    "@types/amap-js-api-autocomplete": "^1.4.1",
     "@types/amap-js-api-place-search": "^1.4.1",
     "@types/workbox-build": "^5.0.1",
     "@vicons/ionicons5": "^0.12.0",

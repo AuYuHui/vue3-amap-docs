@@ -27,7 +27,7 @@ export default withPwa(
           sizes: "16x16",
         },
       ],
-      ["meta", { name: "keywords", content: "pure-admin-utils" }],
+      ["meta", { name: "keywords", content: "vue3-amap" }],
       ["link", { rel: "mask-icon", href: "/logo.png", color: "#ffffff" }],
       [
         "link",
@@ -39,10 +39,20 @@ export default withPwa(
       ],
       [
         "script",
-        {
-          src: "https://webapi.amap.com/maps?v=2.0&key=dbf3f6a5dafa9bd013fab9098a5df12f",
-        },
+        {},
+          `
+            // your JavaScript code goes here
+            window._AMapSecurityConfig = {
+              securityJsCode:'3cc7f7d2fa66fef63ddeacda9db0bea7',
+            }
+          `
       ],
+      [
+        "script",
+        {
+          src: "https://webapi.amap.com/maps?v=2.0&key=dbf3f6a5dafa9bd013fab9098a5df12f&plugin=AMap.AutoComplete,AMap.PlaceSearch",
+        },
+      ]
     ],
     pwa: {
       base: "/",
@@ -53,7 +63,7 @@ export default withPwa(
         cwd: resolve(__dirname, "public"),
       }),
       manifest: {
-        name: "pure-admin-utils",
+        name: "vue3-amap",
         short_name: "@dabu/vue3-amap",
         theme_color: "#ffffff",
         icons: [
@@ -104,6 +114,19 @@ export default withPwa(
           link: "/guide/guide",
           activeMatch: `^/guide/`,
         },
+        {
+          text: "高德地图",
+          items: [
+            {
+              text: "开放平台",
+              link: "https://lbs.amap.com/"
+            },
+            {
+              text: "JSAPI文档",
+              link: "https://lbs.amap.com/api/jsapi-v2/summary/"
+            }
+          ]
+        }
       ],
       sidebar: [
         {

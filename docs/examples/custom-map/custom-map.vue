@@ -1,12 +1,12 @@
 <template>
-  <div class="h-300px w-700px">
+  <div class="h-700px w-900px">
     <ElAmap>
-      <my-map />
+      <my-custom-map />
     </ElAmap>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ElAmap } from "@dabu/vue3-amap";
-import myMap from "./children.vue";
+import myCustomMap from "./my-custom-map.vue";
 </script>

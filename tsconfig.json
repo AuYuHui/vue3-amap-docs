@@ -19,7 +19,7 @@
     "resolveJsonModule": true,
     "lib": ["dom", "esnext"],
     "incremental": true,
-    "types": ["vitepress", "vite/client", "naive-ui/volar", "@types/amap-js-api-place-search"]
+    "types": ["vitepress", "vite/client", "naive-ui/volar", "@types/amap-js-api-place-search", "@types/amap-js-api-autocomplete"]
   },
   "include": ["docs/**/*.ts", "unocss.config.ts", "./client.d.ts","docs/**/*.vue",],
   "exclude": ["node_modules", "dist", "docs/.vitepress/dist"]
