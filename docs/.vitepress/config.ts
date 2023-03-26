@@ -52,7 +52,20 @@ export default withPwa(
         {
           src: "https://webapi.amap.com/maps?v=2.0&key=dbf3f6a5dafa9bd013fab9098a5df12f&plugin=AMap.AutoComplete,AMap.PlaceSearch",
         },
-      ]
+      ],
+      [
+        "script",
+        {},
+          `
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?fa9142c0d692d2f19830b86a1acd72d1";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+          `
+      ],
     ],
     pwa: {
       base: "/",
