@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "@dabu/vue3-amap"
-  text: 高德地图组件库
+  text: Vue3高德地图组件库
   tagline: 基于 Vue3 + Vite + TS
   image:
     src: /logo.png

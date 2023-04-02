@@ -7,6 +7,13 @@
     "build": "vitepress build docs",
     "preview": "pnpm build && vitepress serve docs --port 8084"
   },
+  "keywords": [
+    "vue amap",
+    "vue3 amap",
+    "vue 高德地图组件库",
+    "AMap",
+    "vue-amap"
+  ],
   "license": "MIT",
   "author": "AuYuHui",
   "devDependencies": {
