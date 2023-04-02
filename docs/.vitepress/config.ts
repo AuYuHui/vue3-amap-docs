@@ -180,6 +180,19 @@ export default withPwa(
               text: "Text",
               link: "/examples/overlay/text/text",
             },
+            {
+              text: "CircleMarker",
+              link: "/examples/overlay/marker-circle/marker-circle",
+            }
+          ],
+        },
+        {
+          text: "信息窗体",
+          items: [
+            {
+              text: "InfoWindow",
+              link: "/examples/infoWindow/infoWindow",
+            },
           ],
         },
       ],

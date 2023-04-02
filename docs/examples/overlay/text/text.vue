@@ -1,17 +1,18 @@
 <template>
   <div>
+    <div class="flex items-center mb-7">
+      <div class="flex items-center w-250px">
+        text：
+        <n-input v-model:value="textValue" type="text" />
+      </div>
+    </div>
     <div class="h-500px w-800px">
       <ElAmap ref="AmapRef" :center="[116.473195, 39.973253]" :zoom="13">
         <ElMarkerText
           v-for="text in textList"
           :key="text.anchor"
-          :text="text.text"
-          :anchor="text.anchor"
-          :draggable="text.draggable"
-          :cursor="text.cursor"
-          :angle="text.angle"
-          :position="text.position"
-          :style="text.style"
+          v-model:text="textValue"
+          v-bind="text"
         />
       </ElAmap>
     </div>
@@ -25,11 +26,10 @@ import type { ElMarkerTextProps } from "@dabu/vue3-amap";
 import { useDark } from "@pureadmin/utils";
 const { isDark } = useDark();
 const AmapRef = ref<ElAmapExpose | null>(null);
-
+const textValue = ref('文本标记内容')
 // marker
 const textList = ref<Array<ElMarkerTextProps>>([
   {
-    text: "文本标记内容",
     anchor: "center", // 设置文本标记锚点
     draggable: true,
     cursor: "pointer",
