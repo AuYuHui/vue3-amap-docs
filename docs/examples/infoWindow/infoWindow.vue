@@ -75,7 +75,7 @@ const aois: Array<ElMarkerProps> = [
   [116.46557, 39.999829],
 ].map((position, i) => ({
   position,
-  comment: `第${i}个点`,
+  comment: `第${i + 1}个点`,
 })) as unknown as Array<ElMarkerProps>;
 const markers = reactive<Array<ElMarkerProps>>(aois);
 const activeAoi = ref<any>(markers[0]);
